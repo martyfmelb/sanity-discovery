@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+@mixin select-theme($index, $dark-mode: false) {
+  --theme-set: #{if(not $dark-mode, themes, themes-dark)};
+  @if $index {
+    --theme-index: #{$index};
+  }
+  animation: var(--theme-set) #{$theme-count}s calc((var(--theme-index) - 1) * -1s) paused;
+}
+
+@mixin apply-theme-text() {
+  background: var(--color-base-background);
+  color: var(--color-base-text);
+}
+
+@mixin apply-theme-richtext() {
+  @include apply-theme-text();
+
+  a {
+    color: var(--color-base-text-link);
+  }
+}

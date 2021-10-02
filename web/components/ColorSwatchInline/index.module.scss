@@ -1,0 +1,18 @@
+.root {
+  display: inline-flex;
+  vertical-align: bottom;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon {
+  box-shadow: 0 0 0 1px rgba(black, 0.2) inset;
+  font-size: 0;
+  border-radius: 3px;
+  width: 14px;
+  height: 14px;
+}
+
+.icon + .label {
+  margin-left: 5px;
+}

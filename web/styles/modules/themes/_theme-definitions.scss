@@ -1,0 +1,41 @@
+@mixin default-theme {
+  --color-base-background: #FFFFFF;
+  --color-base-text: #1A1A1A;
+  --color-base-text-link: #EB0A1E;
+  --color-base-border: #DDDDDD;
+}
+
+@mixin light-grey-theme {
+  --color-base-background: #F8F8F8;
+  --color-base-text: #1A1A1A;
+  --color-base-text-link: #EB0A1E;
+  --color-base-border: #DDDDDD;
+}
+
+@mixin red-theme {
+  --color-base-background: #EB0A1E;
+  --color-base-text: #FFFFFF;
+  --color-base-text-link: #FFFFFF;
+  --color-base-border: #FFA070;
+}
+
+@mixin inverted-theme {
+  --color-base-background: #1A1A1A;
+  --color-base-text: #FFFFFF;
+  --color-base-text-link: #FFA070;
+  --color-base-border: #888888;
+}
+
+@keyframes themes {
+  0% { @include default-theme; }
+  25% { @include light-grey-theme; }
+  50% { @include red-theme; }
+  100% {@include inverted-theme; }
+}
+
+@keyframes themes-dark {
+  0% { @include inverted-theme; }
+  25% { @include light-grey-theme; }
+  50% { @include red-theme; }
+  100% {@include default-theme; }
+}

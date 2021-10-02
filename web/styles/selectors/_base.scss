@@ -1,0 +1,23 @@
+@use "../modules/themes/mixins" as *;
+
+html {
+  @include select-theme(1);
+  @include apply-theme-richtext();
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.sd-invert {
+  @include select-theme(null, true);
+  background: var(--color-base-background);
+  color: var(--color-base-text);
+}

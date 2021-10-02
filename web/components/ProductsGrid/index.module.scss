@@ -1,0 +1,25 @@
+@use "styles/modules/themes/mixins" as *;
+@use "styles/modules/breakpoints" as *;
+
+.root {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+
+  @include breakpoint-sm-down() {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  border-radius: 6px;
+  border: 1px solid var(--color-base-border);
+  padding: 20px;
+}
+
+.badge {
+  display: inline-block;
+  @include select-theme(3);
+  @include apply-theme-text();
+  padding: 5px;
+}

@@ -13,10 +13,14 @@
     "@sanity/client": "^2.19.0",
     "@sanity/image-url": "^1.0.1",
     "next": "^11.1.2",
+    "next-sanity-image": "^3.1.7",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "sass": "^1.42.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "normalize.css": "^8.0.1"
+  },
   "author": "",
   "license": "ISC"
 }
