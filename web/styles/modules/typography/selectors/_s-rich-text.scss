@@ -1,0 +1,39 @@
+@use "../mixins" as *;
+
+.s-rich-text {
+  h1 {
+    @include tg-h1();
+  }
+
+  h2 {
+    @include tg-h2();
+  }
+
+  h3 {
+    @include tg-h3();
+  }
+
+  h4 {
+    @include tg-h4();
+  }
+
+  h5 {
+    @include tg-h5();
+  }
+
+  h6 {
+    @include tg-h6();
+  }
+
+  p {
+    @include tg-paragraph();
+  }
+
+  &:not(.-keep-margin-top) :first-child:not(.tg-keep-margin-top) {
+    margin-top: 0;
+  }
+
+  &:not(.-keep-margin-top) :last-child:not(.tg-keep-margin-bottom) {
+    margin-bottom: 0;
+  }
+}

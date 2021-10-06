@@ -1,0 +1,47 @@
+$mqv-xxxs-min-width: null; // iPhone SE
+$mqv-xxs-min-width: 360px; // Most phones, portrait
+$mqv-xs-min-width: 480px; // Shorter phones, landscape
+$mqv-sm-min-width: 576px; // Longer phones, landscape, some Android tablets portrait
+$mqv-md-min-width: 768px; // iPad portrait, >19.5:9 phones in landscape
+$mqv-lg-min-width: 992px; // iPad landscape, iPad 12.9 portrait
+$mqv-xl-min-width: 1200px; // iPad 12.9 landscape, cheaper laptops
+$mqv-xxl-min-width: 1400px; // Mainly desktops and high-end laptops
+$mqv-xxxs-max-width: $mqv-xxs-min-width - 0.001px;
+$mqv-xxs-max-width: $mqv-xs-min-width - 0.001px;
+$mqv-xs-max-width: $mqv-sm-min-width - 0.001px;
+$mqv-sm-max-width: $mqv-md-min-width - 0.001px;
+$mqv-md-max-width: $mqv-lg-min-width - 0.001px;
+$mqv-lg-max-width: $mqv-xl-min-width - 0.001px;
+$mqv-xl-max-width: $mqv-xxl-min-width - 0.001px;
+
+$mq-xxxs-down: "(max-width: #{$mqv-xxxs-max-width})";
+$mq-xxxs-only: "(max-width: #{$mqv-xxxs-max-width})";
+$mq-xxxs-up:   "";
+
+$mq-xxs-down: "(max-width: #{$mqv-xxs-max-width})";
+$mq-xxs-only: "(min-width: #{$mqv-xxs-min-width}) and (max-width: #{$mqv-xxs-max-width})";
+$mq-xxs-up:   "(min-width: #{$mqv-xxs-min-width})";
+
+$mq-xs-down: "(max-width: #{$mqv-xs-max-width})";
+$mq-xs-only: "(min-width: #{$mqv-xs-min-width}) and (max-width: #{$mqv-xs-max-width})";
+$mq-xs-up:   "(min-width: #{$mqv-xs-min-width})";
+
+$mq-sm-down: "(max-width: #{$mqv-sm-max-width})";
+$mq-sm-only: "(min-width: #{$mqv-sm-min-width}) and (max-width: #{$mqv-sm-max-width})";
+$mq-sm-up:   "(min-width: #{$mqv-sm-min-width})";
+
+$mq-md-down: "(max-width: #{$mqv-md-max-width})";
+$mq-md-only: "(min-width: #{$mqv-md-min-width}) and (max-width: #{$mqv-md-max-width})";
+$mq-md-up:   "(min-width: #{$mqv-md-min-width})";
+
+$mq-lg-down: "(max-width: #{$mqv-lg-max-width})";
+$mq-lg-only: "(min-width: #{$mqv-lg-min-width}) and (max-width: #{$mqv-lg-max-width})";
+$mq-lg-up:   "(min-width: #{$mqv-lg-min-width})";
+
+$mq-xl-down: "(max-width: #{$mqv-xl-max-width})";
+$mq-xl-only: "(min-width: #{$mqv-xl-min-width}) and (max-width: #{$mqv-xl-max-width})";
+$mq-xl-up:   "(min-width: #{$mqv-xl-min-width})";
+
+$mq-xxl-down: "";
+$mq-xxl-only: "(min-width: #{$mqv-xxl-min-width})";
+$mq-xxl-up:   "(min-width: #{$mqv-xxl-min-width})";

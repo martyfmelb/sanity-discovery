@@ -6,10 +6,12 @@ import ProductsGrid from "../components/ProductsGrid";
 const Products = (props) => {
   const router = useRouter();
 
-  return (<>
-    <h1>Products</h1>
-    <ProductsGrid products={props.products} />
-  </>);
+  return (
+    <div className="u-container">
+      <h1 className="tg-h1">Products</h1>
+      <ProductsGrid products={props.products} />
+    </div>
+  );
 };
 
 Products.getInitialProps = async function(context) {

@@ -1,0 +1,33 @@
+@use "variables" as *;
+
+@mixin mq-xxxs-down { @media #{$mq-xxxs-down} { @content; } };
+@mixin mq-xxxs-only { @media #{$mq-xxxs-only} { @content; } };
+@mixin mq-xxxs-up   { @media #{$mq-xxxs-up}   { @content; } };
+
+@mixin mq-xxs-down { @media #{$mq-xxs-down} { @content; } };
+@mixin mq-xxs-only { @media #{$mq-xxs-only} { @content; } };
+@mixin mq-xxs-up   { @media #{$mq-xxs-up}   { @content; } };
+
+@mixin mq-xs-down { @media #{$mq-xs-down} { @content; } };
+@mixin mq-xs-only { @media #{$mq-xs-only} { @content; } };
+@mixin mq-xs-up   { @media #{$mq-xs-up}   { @content; } };
+
+@mixin mq-sm-down { @media #{$mq-sm-down} { @content; } };
+@mixin mq-sm-only { @media #{$mq-sm-only} { @content; } };
+@mixin mq-sm-up   { @media #{$mq-sm-up}   { @content; } };
+
+@mixin mq-md-down { @media #{$mq-md-down} { @content; } };
+@mixin mq-md-only { @media #{$mq-md-only} { @content; } };
+@mixin mq-md-up   { @media #{$mq-md-up}   { @content; } };
+
+@mixin mq-lg-down { @media #{$mq-lg-down} { @content; } };
+@mixin mq-lg-only { @media #{$mq-lg-only} { @content; } };
+@mixin mq-lg-up   { @media #{$mq-lg-up}   { @content; } };
+
+@mixin mq-xl-down { @media #{$mq-xl-down} { @content; } };
+@mixin mq-xl-only { @media #{$mq-xl-only} { @content; } };
+@mixin mq-xl-up   { @media #{$mq-xl-up}   { @content; } };
+
+@mixin mq-xxl-down { @media #{$mq-xxl-down} { @content; } };
+@mixin mq-xxl-only { @media #{$mq-xxl-only} { @content; } };
+@mixin mq-xxl-up   { @media #{$mq-xxl-up}   { @content; } };

@@ -19,6 +19,7 @@
     "sass": "^1.42.1"
   },
   "devDependencies": {
+    "classnames": "^2.3.1",
     "normalize.css": "^8.0.1"
   },
   "author": "",

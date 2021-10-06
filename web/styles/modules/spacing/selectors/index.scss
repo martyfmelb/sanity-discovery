@@ -1,0 +1,13 @@
+@use "../variables" as *;
+
+@each $size in $sizes {
+  .u-mt-#{$size} {
+    margin-top: map-get($spacing, $size);
+  }
+  .u-mb-#{$size} {
+    margin-bottom: map-get($spacing, $size);
+  }
+  .u-p-#{$size} {
+    padding: map-get($spacing, $size);
+  }
+}

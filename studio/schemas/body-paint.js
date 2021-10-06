@@ -8,7 +8,13 @@ export default {
       name: 'name',
       type: 'string'
     },
-  
+
+    {
+      title: 'Display Name',
+      name: 'displayName',
+      type: 'string'
+    },
+
     {
       title: 'Hex Colour',
       name: 'hexColour',

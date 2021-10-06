@@ -1,9 +1,10 @@
 @use "../modules/themes/mixins" as *;
+@use "../modules/typography/mixins" as *;
 
 html {
   @include select-theme(1);
   @include apply-theme-richtext();
-  font-family: sans-serif;
+  @include tg-base();
 }
 
 h1,
@@ -16,8 +17,13 @@ p {
   margin: 0;
 }
 
-.sd-invert {
+.u-theme-invert {
   @include select-theme(null, true);
   background: var(--color-base-background);
   color: var(--color-base-text);
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
 }

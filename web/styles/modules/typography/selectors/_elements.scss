@@ -1,0 +1,33 @@
+@use "../mixins" as *;
+
+.tg-h1 {
+  @include tg-h1();
+}
+
+.tg-h2 {
+  @include tg-h2();
+}
+
+.tg-h3 {
+  @include tg-h3();
+}
+
+.tg-h4 {
+  @include tg-h4();
+}
+
+.tg-h5 {
+  @include tg-h5();
+}
+
+.tg-h6 {
+  @include tg-h6();
+}
+
+.tg-p {
+  @include tg-paragraph();
+}
+
+.tg-label {
+  @include tg-label();
+}

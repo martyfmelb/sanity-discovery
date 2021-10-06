@@ -1,0 +1,23 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.u-container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq-md-up {
+    width: $mqv-md-min-width - 20px;
+  }
+
+  @include mq-lg-up {
+    width: $mqv-lg-min-width - 20px;
+  }
+
+  @include mq-xl-up {
+    width: $mqv-xl-min-width - 20px;
+  }
+
+  @include mq-xxl-up {
+    width: $mqv-xxl-min-width - 20px;
+  }
+}
